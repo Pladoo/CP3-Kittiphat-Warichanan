@@ -1,0 +1,5 @@
+s = input("distance (km)")
+t = input("time (h)")
+print(("s") , "=" , float(s) , "m")
+print(("t") , "=" , float(t) , "h")
+print(("v") , "=" , float(s) / float(t) , "km/h")
