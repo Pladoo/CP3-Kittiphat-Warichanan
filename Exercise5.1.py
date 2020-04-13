@@ -1,1 +1,6 @@
-
+num1 = (input("number1"))
+num2 = (input("number2"))
+print(str(num1) ,"+", str(num2), "=" , float(num1) + float(num2))
+print(str(num1) ,"-", str(num2), "=" , float(num1) - float(num2))
+print(str(num1) ,"*", str(num2), "=" , float(num1) * float(num2))
+print(str(num1) ,"/", str(num2), "=" , float(num1) / float(num2))
