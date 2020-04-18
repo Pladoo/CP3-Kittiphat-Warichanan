@@ -1,0 +1,8 @@
+def Sum(x,y) :
+    print(x+y)
+def Negative(x,y) :
+    print(x-y)
+def Multiplying(x,y) :
+    print(x*y)
+def Devision(x,y) :
+    print(x/y)
