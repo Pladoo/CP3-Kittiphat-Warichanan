@@ -1,0 +1,39 @@
+def login () :
+    UsernameInput = input("Username : ")
+    PasswordInput = input("password : ")
+    while UsernameInput != "1" or PasswordInput != "1":
+        print("Wrong password!!")
+        UsernameInput = input("Username : ")
+        PasswordInput = input("password : ")
+    print("Login success!!")
+
+def showMenu () :
+    print("-------Menu--------")
+    print("1. Calculator vat")
+    print("2. total price")
+
+def menuSelect () :
+    userSelected = int(input("Select menu : "))
+    return userSelected
+
+def vatCalculate (price) :
+    result = price + (price * 7 / 100)
+    return result
+
+def totalPrice () :
+    price1 = int(input("First price : "))
+    price2 = int(input("Second price : "))
+    return vatCalculate(price1+price2)
+
+# Map
+
+login()
+showMenu()
+userselected = menuSelect()
+if int(userselected) == 1 :
+    price = int(input("Price of item : "))
+    print(vatCalculate(price))
+elif int(userselected) == 2 :
+    print(totalPrice())
+print("Finish !!")
+
