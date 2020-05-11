@@ -1,0 +1,20 @@
+MenuName = []
+Price = []
+while True:
+    MenuList = input("Name of Menu : ")
+    if MenuList.lower() == "exit" :
+        break
+    else:
+        MenuPrice = input("Price of Menu : ")
+        MenuName.append(MenuList)
+        Price.append((MenuPrice))
+
+def ShowBill() :
+    sum = 0
+    print("---- Welcome ----")
+    for Number in range(len(MenuName)) :
+        print(MenuName[Number] , Price[Number])
+        Price[Number] = int(Price[Number])
+        sum = sum + Price[Number]
+    print("Total" , sum)
+ShowBill()
